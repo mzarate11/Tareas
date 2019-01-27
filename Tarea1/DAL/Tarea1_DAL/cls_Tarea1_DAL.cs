@@ -8,72 +8,59 @@ namespace DAL.Tarea1_DAL
 {
     public class cls_Tarea1_DAL
     {
-        private int _iDigito1, _iDigito2, _iResultado1, _iResultado2;
-        private char _cBnd;
+        private float _fdigito1, _fdigito2, _fresultado1;
+        private char _cbnd;
 
         #region Variables Públicas
-        public int iDigito1
+        public float fdigito1
         {
             get
             {
-                return _iDigito1;
+                return _fdigito1;
             }
 
             set
             {
-                _iDigito1 = value;
+                _fdigito1 = value;
             }
         }
 
-        public int iDigito2
+        public float fdigito2
         {
             get
             {
-                return _iDigito2;
+                return _fdigito2;
             }
 
             set
             {
-                _iDigito2 = value;
+                _fdigito2 = value;
             }
         }
 
-        public int iResultado
+        public float fresultado
         {
             get
             {
-                return _iResultado1;
+                return _fresultado1;
             }
 
             set
             {
-                _iResultado1 = value;
+                _fresultado1 = value;
             }
         }
 
-        public int iResultado2
+        public char cbnd
         {
             get
             {
-                return _iResultado2;
+                return _cbnd;
             }
 
             set
             {
-                _iResultado2 = value;
-            }
-        }
-
-        public char cBnd
-        {
-            get
-            {
-                return _cBnd;
-            }
-
-            set
-            {
-                _cBnd = value;
+                _cbnd = value;
             }
         }
 

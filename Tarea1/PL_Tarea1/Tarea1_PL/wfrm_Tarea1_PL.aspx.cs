@@ -28,37 +28,37 @@ namespace PL_Tarea1.Tarea1_PL
             {
                 if (dld_Opciones.SelectedValue == "Sumar")
                 {
-                    ObjDAL.iDigito1 = Convert.ToInt32(txt_Digito1.Text);
-                    ObjDAL.iDigito2 = Convert.ToInt32(txt_Digito2.Text);
+                    ObjDAL.fdigito1 = Convert.ToInt32(txt_Digito1.Text);
+                    ObjDAL.fdigito2 = Convert.ToInt32(txt_Digito2.Text);
                     ObjBLL.Sumar(ref ObjDAL);
-                    txt_Resultado.Text = ObjDAL.iResultado.ToString();
+                    txt_Resultado.Text = ObjDAL.fresultado.ToString();
                 }
                 else if (dld_Opciones.SelectedValue == "Restar")
                 {
-                    ObjDAL.iDigito1 = Convert.ToInt32(txt_Digito1.Text);
-                    ObjDAL.iDigito2 = Convert.ToInt32(txt_Digito2.Text);
+                    ObjDAL.fdigito1 = Convert.ToInt32(txt_Digito1.Text);
+                    ObjDAL.fdigito2 = Convert.ToInt32(txt_Digito2.Text);
                     ObjBLL.Restar(ref ObjDAL);
-                    txt_Resultado.Text = ObjDAL.iResultado.ToString();
+                    txt_Resultado.Text = ObjDAL.fresultado.ToString();
                 }
                 else if (dld_Opciones.SelectedValue == "Multiplicar")
                 {
-                    ObjDAL.iDigito1 = Convert.ToInt32(txt_Digito1.Text);
-                    ObjDAL.iDigito2 = Convert.ToInt32(txt_Digito2.Text);
+                    ObjDAL.fdigito1 = Convert.ToInt32(txt_Digito1.Text);
+                    ObjDAL.fdigito2 = Convert.ToInt32(txt_Digito2.Text);
                     ObjBLL.Multiplicar(ref ObjDAL);
-                    txt_Resultado.Text = ObjDAL.iResultado.ToString();
+                    txt_Resultado.Text = ObjDAL.fresultado.ToString();
                 }
                 else if (dld_Opciones.SelectedValue == "Dividir")
                 {
-                    ObjDAL.iDigito1 = Convert.ToInt32(txt_Digito1.Text);
-                    ObjDAL.iDigito2 = Convert.ToInt32(txt_Digito2.Text);
+                    ObjDAL.fdigito1 = Convert.ToInt32(txt_Digito1.Text);
+                    ObjDAL.fdigito2 = Convert.ToInt32(txt_Digito2.Text);
                     ObjBLL.Dividir(ref ObjDAL);
-                    if (ObjDAL.cBnd == 'M')
+                    if (ObjDAL.cbnd == 'M')
                     {
                         Response.Write("<script>window.alert('La división entre 0 no está dentro del conjunto de los números Reales');</script>");
                     }
                     else
                     {
-                        txt_Resultado.Text = ObjDAL.iResultado.ToString();
+                        txt_Resultado.Text = ObjDAL.fresultado.ToString();
                     }
                 }
             }

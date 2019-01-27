@@ -40,6 +40,15 @@ namespace PL_Tarea1.Tarea1_PL {
         protected global::System.Web.UI.WebControls.TextBox txt_Digito1;
         
         /// <summary>
+        /// Re1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator Re1;
+        
+        /// <summary>
         /// lb_Digito2 control.
         /// </summary>
         /// <remarks>

@@ -11,31 +11,31 @@ namespace BLL.Tarea1_BLL
     {
         public void Sumar(ref cls_Tarea1_DAL ObjDAL)
         {
-            ObjDAL.iResultado = ObjDAL.iDigito1 + ObjDAL.iDigito2;
+            ObjDAL.fresultado = ObjDAL.fdigito1 + ObjDAL.fdigito2;
 
         }
 
 
         public void Restar(ref cls_Tarea1_DAL ObjDAL)
         {
-            ObjDAL.iResultado = ObjDAL.iDigito1 - ObjDAL.iDigito2;
+            ObjDAL.fresultado = ObjDAL.fdigito2 - ObjDAL.fdigito2;
         }
 
         public void Multiplicar(ref cls_Tarea1_DAL ObjDAL)
         {
-            ObjDAL.iResultado = ObjDAL.iDigito1 * ObjDAL.iDigito2;
+            ObjDAL.fresultado = ObjDAL.fdigito2 * ObjDAL.fdigito2;
         }
 
         public void Dividir(ref cls_Tarea1_DAL ObjDAL)
         {
-            ObjDAL.cBnd = 'B';
-            if (ObjDAL.iDigito2 == 0)
+            ObjDAL.cbnd = 'B';
+            if (ObjDAL.fdigito2 == 0)
             {
-                ObjDAL.cBnd = 'M';
+                ObjDAL.cbnd = 'M';
             }
             else
             {
-                ObjDAL.iResultado = ObjDAL.iDigito1 / ObjDAL.iDigito2;
+                ObjDAL.fresultado = ObjDAL.fdigito1 / ObjDAL.fdigito2;
             }
 
         }
