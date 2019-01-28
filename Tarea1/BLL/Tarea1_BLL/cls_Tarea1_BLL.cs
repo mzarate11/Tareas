@@ -18,12 +18,12 @@ namespace BLL.Tarea1_BLL
 
         public void Restar(ref cls_Tarea1_DAL ObjDAL)
         {
-            ObjDAL.fresultado = ObjDAL.fdigito2 - ObjDAL.fdigito2;
+            ObjDAL.fresultado = (ObjDAL.fdigito1 - ObjDAL.fdigito2);
         }
 
         public void Multiplicar(ref cls_Tarea1_DAL ObjDAL)
         {
-            ObjDAL.fresultado = ObjDAL.fdigito2 * ObjDAL.fdigito2;
+            ObjDAL.fresultado = (ObjDAL.fdigito1*ObjDAL.fdigito2);
         }
 
         public void Dividir(ref cls_Tarea1_DAL ObjDAL)
@@ -35,7 +35,7 @@ namespace BLL.Tarea1_BLL
             }
             else
             {
-                ObjDAL.fresultado = ObjDAL.fdigito1 / ObjDAL.fdigito2;
+                ObjDAL.fresultado = (ObjDAL.fdigito1 / ObjDAL.fdigito2);
             }
 
         }
