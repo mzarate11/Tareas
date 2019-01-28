@@ -1,7 +1,6 @@
 ﻿body {
     
     background-image: url('../Resources/Background.jpg');
-    ba
     background-attachment:scroll;
     position:page;
     background-size:cover;
@@ -23,10 +22,98 @@ div {
 h2 {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+    font-size:medium;
     color: white;
     height: 76px;
 }
-
+#bttn_Calcular {
+        background-image: url('../Resources/button.png');  
+        background-size:cover;
+        background-position:center; 
+        font-family:Arial;
+        font-size: x-large;
+        border-radius: 36px 36px 36px 36px;
+        -moz-border-radius: 36px 36px 36px 36px;
+        -webkit-border-radius: 36px 36px 36px 36px; 
+        border: 0px solid #000000;
+        -webkit-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        -moz-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+}
+#bttn_limpiar {
+        font-family:Arial;
+        font-size: x-large;
+        background-image: url('../Resources/button.png');  
+        background-size:cover;
+        background-position:center;
+        border-radius: 36px 36px 36px 36px;
+        -moz-border-radius: 36px 36px 36px 36px;
+        -webkit-border-radius: 36px 36px 36px 36px;
+        border: 0px solid #000000;
+        -webkit-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        -moz-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86); 
+}
+#txt_Digito1 {
+        text-align:center;
+        font-family:Arial;
+        font-size: x-large;
+        background-image: url('../Resources/button.png');  
+        background-size:cover;
+        background-position:center;
+        border-radius: 36px 36px 36px 36px;
+        -moz-border-radius: 36px 36px 36px 36px;
+        -webkit-border-radius: 36px 36px 36px 36px;
+        border: 0px solid #000000;
+        -webkit-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        -moz-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);  
+}
+#txt_Digito2 {
+        text-align:center;
+        font-family:Arial;
+        font-size: x-large;
+        background-image: url('../Resources/button.png');  
+        background-size:cover;
+        background-position:center;
+        border-radius: 36px 36px 36px 36px;
+        -moz-border-radius: 36px 36px 36px 36px;
+        -webkit-border-radius: 36px 36px 36px 36px;
+        border: 0px solid #000000;
+        -webkit-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        -moz-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);  
+}
+#txt_Resultado {
+        text-align:center;
+        font-family:Arial;
+        font-size: x-large;
+        background-image: url('../Resources/button.png');  
+        background-size:cover;
+        background-position:center;
+        border-radius: 36px 36px 36px 36px;
+        -moz-border-radius: 36px 36px 36px 36px;
+        -webkit-border-radius: 36px 36px 36px 36px;
+        border: 0px solid #000000;
+        -webkit-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        -moz-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+}
+#dld_Opciones {
+        text-align:center;
+        font-family:Arial;
+        font-size: x-large;
+        background-image: url('../Resources/button.png');  
+        background-size:cover;
+        background-position:center;
+        border-radius: 36px 36px 36px 36px;
+        -moz-border-radius: 36px 36px 36px 36px;
+        -webkit-border-radius: 36px 36px 36px 36px;
+        border: 0px solid #000000;
+        -webkit-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        -moz-box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        box-shadow: 11px 9px 19px -1px rgba(0,0,0,0.86);
+        background-color:cadetblue;
+}
 
 

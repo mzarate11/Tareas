@@ -18,8 +18,26 @@ namespace PL_Tarea1.Tarea1_PL
 
         }
 
+       
+
+        protected void bttn_limpiar_Click(object sender, EventArgs e)
+        {
+            if (txt_Digito1.Text == "" && txt_Digito2.Text == "")
+            {
+                Response.Write("<script>window.alert('No Hay Datos que borrar');</script>");
+            }
+            else
+            {
+                txt_Digito1.Text = "";
+                txt_Digito2.Text = "";
+                txt_Resultado.Text = "";
+
+            }
+        }
+
         protected void bttn_Calclular_Click(object sender, EventArgs e)
         {
+
             if (txt_Digito1.Text == "" || txt_Digito2.Text == "")
             {
                 Response.Write("<script>window.alert('Debe llenar ambos espacios');</script>");
@@ -61,21 +79,6 @@ namespace PL_Tarea1.Tarea1_PL
                         txt_Resultado.Text = ObjDAL.fresultado.ToString();
                     }
                 }
-            }
-        }
-
-        protected void bttn_limpiar_Click(object sender, EventArgs e)
-        {
-            if (txt_Digito1.Text == "" && txt_Digito2.Text == "")
-            {
-                Response.Write("<script>window.alert('No Hay Datos que borrar');</script>");
-            }
-            else
-            {
-                txt_Digito1.Text = "";
-                txt_Digito2.Text = "";
-                txt_Resultado.Text = "";
-
             }
         }
     }

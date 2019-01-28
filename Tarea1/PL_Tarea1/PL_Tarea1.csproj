@@ -108,6 +108,7 @@
   <ItemGroup>
     <Content Include="Hojas de Estilo\hds_1.css" />
     <Content Include="Resources\Background.jpg" />
+    <Content Include="Resources\button.png" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Tarea1_PL\wfrm_Tarea1_PL.aspx" />
