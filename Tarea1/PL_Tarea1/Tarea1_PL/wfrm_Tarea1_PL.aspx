@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfrm_Tarea1_PL.aspx.cs" Inherits="PL_Tarea1.Tarea1_PL.wfrm_Tarea1_PL" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfrm_Tarea1_PL.aspx.cs" Inherits="PL_Tarea1.Tarea1_PL.wfrm_Tarea1_PL" UnobtrusiveValidationMode="none" %>
 
 <!DOCTYPE html>
 
@@ -23,13 +23,12 @@
     <br/>
     <div aria-autocomplete="none">
         <asp:Label ID="lb_Digito1" runat="server" Text="Digito 1:"></asp:Label>
-        <asp:TextBox style= ID="txt_Digito1" runat="server" MaxLength="5"></asp:TextBox>
-        <asp:RegularExpressionValidator ID="ReValidator1" runat="server" ErrorMessage="Sólo deben ir números" Text="*" ControlToValidate="txt_Digito1" ValidationExpression="^[0-9]+([,][0-9]+)?$"></asp:RegularExpressionValidator>
- 
+        <asp:TextBox style= ID="txt_Digito1" runat="server" MaxLength="5" ValidationGroup="txt"></asp:TextBox>
+        <asp:RegularExpressionValidator ID="RegularEValidator1" runat="server" ErrorMessage="Sólo Valores Númericos" Text="*" ValidationExpression="\d{1,3}(,\d{1,2})?" ControlToValidate="txt_Digito1" ToolTip="Sólo Valores Númericos (&quot;,&quot; como separador decimal)" ValidationGroup="txt"></asp:RegularExpressionValidator>
          <p>
-            <asp:Label ID="lb_Digito2" runat="server" Text="Digito 2:">
-
-            </asp:Label><asp:TextBox ID="txt_Digito2" runat="server" MaxLength="5"></asp:TextBox>
+            <asp:Label ID="lb_Digito2" runat="server" Text="Digito 2:"></asp:Label>
+             <asp:TextBox ID="txt_Digito2" runat="server" MaxLength="5" ValidationGroup="txt"></asp:TextBox>
+             <asp:RegularExpressionValidator ID="RegularEValidator2" runat="server" ErrorMessage="Sólo Valores Númericos" ControlToValidate="txt_Digito2" Text="*" ValidationExpression="\d{1,3}(,\d{1,2})?" ToolTip="Sólo Valores Númericos (&quot;,&quot; como separador decimal)" ValidationGroup="txt"></asp:RegularExpressionValidator>
          </p>
         
         <p>

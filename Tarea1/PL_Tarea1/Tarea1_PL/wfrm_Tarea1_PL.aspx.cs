@@ -28,9 +28,9 @@ namespace PL_Tarea1.Tarea1_PL
             }
             else
             {
-                txt_Digito1.Text = "";
-                txt_Digito2.Text = "";
-                txt_Resultado.Text = "";
+                txt_Digito1.Text = string.Empty;
+                txt_Digito2.Text = string.Empty;
+                txt_Resultado.Text = string.Empty;
 
             }
         }
@@ -46,29 +46,29 @@ namespace PL_Tarea1.Tarea1_PL
             {
                 if (dld_Opciones.SelectedValue == "Sumar")
                 {
-                    ObjDAL.fdigito1 = Convert.ToInt32(txt_Digito1.Text);
-                    ObjDAL.fdigito2 = Convert.ToInt32(txt_Digito2.Text);
+                    ObjDAL.fdigito1 = Convert.ToSingle(txt_Digito1.Text);
+                    ObjDAL.fdigito2 = Convert.ToSingle(txt_Digito2.Text);
                     ObjBLL.Sumar(ref ObjDAL);
                     txt_Resultado.Text = ObjDAL.fresultado.ToString();
                 }
                 else if (dld_Opciones.SelectedValue == "Restar")
                 {
-                    ObjDAL.fdigito1 = Convert.ToInt32(txt_Digito1.Text);
-                    ObjDAL.fdigito2 = Convert.ToInt32(txt_Digito2.Text);
+                    ObjDAL.fdigito1 = Convert.ToSingle(txt_Digito1.Text);
+                    ObjDAL.fdigito2 = Convert.ToSingle(txt_Digito2.Text);
                     ObjBLL.Restar(ref ObjDAL);
                     txt_Resultado.Text = ObjDAL.fresultado.ToString();
                 }
                 else if (dld_Opciones.SelectedValue == "Multiplicar")
                 {
-                    ObjDAL.fdigito1 = Convert.ToInt32(txt_Digito1.Text);
-                    ObjDAL.fdigito2 = Convert.ToInt32(txt_Digito2.Text);
+                    ObjDAL.fdigito1 = Convert.ToSingle(txt_Digito1.Text);
+                    ObjDAL.fdigito2 = Convert.ToSingle(txt_Digito2.Text);
                     ObjBLL.Multiplicar(ref ObjDAL);
                     txt_Resultado.Text = ObjDAL.fresultado.ToString();
                 }
                 else if (dld_Opciones.SelectedValue == "Dividir")
                 {
-                    ObjDAL.fdigito1 = Convert.ToInt32(txt_Digito1.Text);
-                    ObjDAL.fdigito2 = Convert.ToInt32(txt_Digito2.Text);
+                    ObjDAL.fdigito1 = Convert.ToSingle(txt_Digito1.Text);
+                    ObjDAL.fdigito2 = Convert.ToSingle(txt_Digito2.Text);
                     ObjBLL.Dividir(ref ObjDAL);
                     if (ObjDAL.cbnd == 'M')
                     {

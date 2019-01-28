@@ -40,13 +40,13 @@ namespace PL_Tarea1.Tarea1_PL {
         protected global::System.Web.UI.WebControls.TextBox txt_Digito1;
         
         /// <summary>
-        /// ReValidator1 control.
+        /// RegularEValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator ReValidator1;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularEValidator1;
         
         /// <summary>
         /// lb_Digito2 control.
@@ -65,6 +65,15 @@ namespace PL_Tarea1.Tarea1_PL {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_Digito2;
+        
+        /// <summary>
+        /// RegularEValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularEValidator2;
         
         /// <summary>
         /// dld_Opciones control.
