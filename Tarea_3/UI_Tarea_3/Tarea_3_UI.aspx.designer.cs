@@ -31,13 +31,40 @@ namespace UI_Tarea_3 {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txt_palabra;
         
         /// <summary>
-        /// bttn_Preguntar control.
+        /// RegularEValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton bttn_Preguntar;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularEValidator1;
+        
+        /// <summary>
+        /// RequiredFValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFValidator1;
+        
+        /// <summary>
+        /// bttnPreguntar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button bttnPreguntar;
+        
+        /// <summary>
+        /// BttnLimpiar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BttnLimpiar;
         
         /// <summary>
         /// txt_Respuesta control.

@@ -49,8 +49,9 @@
     <form id="form1" runat="server">
     <div class="container">
     <label class="lb_palabra" for="lb_Palabra">Palabra:</label>
-    <input name="Palabra" id="txt_palabra" class="form-control" runat="server" type="text" maxlength="15" />
+    <input name="Palabra" id="txt_palabra" class="form-control" runat="server" type="text" maxlength="15" placeholder="Se debe introducir una palabra de al menos 3 letras" min="3" />
         <asp:RegularExpressionValidator ID="RegularEValidator1" runat="server" ErrorMessage="Solo se Permiten Letras" ControlToValidate="txt_palabra" ValidationExpression="^[a-zA-Z ]*$" ValidationGroup="letras" ForeColor="#cc0000"></asp:RegularExpressionValidator>
+        <asp:RequiredFieldValidator ID="RequiredFValidator1" runat="server" ErrorMessage="*" ControlToValidate="txt_palabra" ValidationGroup="letras" ForeColor="#cc0000" ToolTip="Espacio Requerido"></asp:RequiredFieldValidator>
     </div>
     <div class="col-md-12">
         <br/>
