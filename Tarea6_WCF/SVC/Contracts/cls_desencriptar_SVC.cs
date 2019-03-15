@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using BLL;
-using System.ServiceModel;
 using System.Runtime.Serialization;
+using System.ServiceModel;
 
 namespace SVC.Contracts
 {
-    public class cls_encriptar_SVC : Interfaces.Iencriptar
+    public class cls_desencriptar_SVC : Interfaces.Idesencriptar
     {
-        public string Encript(string sCadena, byte[] bEncript)
+        public string desencript(string sCadena, byte[] bEncript)
         {
             string sResultado;
             cls_Tarea6_DAL Obj_DAL = new cls_Tarea6_DAL();
@@ -20,9 +20,10 @@ namespace SVC.Contracts
 
             Obj_DAL.sCadena = sCadena;
             Obj_DAL.bEncript = bEncript;
-            Obj_BLL.Encriptar(ref Obj_DAL);
 
+            Obj_BLL.Desencriptar(ref Obj_DAL);
             sResultado = Obj_DAL.sResultado;
+
             return sResultado;
         }
 

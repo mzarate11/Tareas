@@ -45,11 +45,11 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\cls_desencriptar_SVC.cs" />
     <Compile Include="Contracts\cls_encriptar_SVC.cs" />
+    <Compile Include="Interfaces\Idesencriptar.cs" />
     <Compile Include="Interfaces\Iencriptar.cs" />
-    <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
