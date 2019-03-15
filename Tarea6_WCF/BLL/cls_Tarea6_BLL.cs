@@ -9,16 +9,15 @@ namespace BLL
 {
     public class cls_Tarea6_BLL
     {
-        cls_Tarea6_DAL Obj_DAL = new cls_Tarea6_DAL();
 
-        public void Encriptar()
+        public void Encriptar(ref cls_Tarea6_DAL Obj_DAL)
         {
             Obj_DAL.bEncript = System.Text.Encoding.Unicode.GetBytes(Obj_DAL.sCadena);
 
             Obj_DAL.sResultado = Convert.ToBase64String(Obj_DAL.bEncript);
         }
 
-        public void Desencriptar()
+        public void Desencriptar(ref cls_Tarea6_DAL Obj_DAL)
         {
             Obj_DAL.bEncript = Convert.FromBase64String(Obj_DAL.sCadena);
 
