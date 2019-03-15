@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="wfrm_Menu.master.cs" Inherits="UI.wfrm_Menu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Styles/Bootstrap/bootstrap.min.css" />
+    <script src="Styles/Bootstrap/jquery.min.js"></script>
+    <script src="Styles/Bootstrap/bootstrap.min.js"></script>
+    <script src="Scripts/Menu.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="lblInicio" href="#">Tarea#5</a>
+         </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a onclick="Calcu()"> Calculadora</a></li>
+                    <li class="active"><a onclick="Palin()"> Palíndromos</a></li>
+                </ul>
+        </div>
+    </nav>        
+    <img id="fondo" src="Resources/fondoV.jpg" alt="background image"/>    
+    <asp:ContentPlaceHolder ID="Menu" runat="server">
+        </asp:ContentPlaceHolder>
+</body>
+</html>
