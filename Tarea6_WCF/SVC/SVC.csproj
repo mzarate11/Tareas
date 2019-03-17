@@ -47,8 +47,10 @@
   <ItemGroup>
     <Compile Include="Contracts\cls_desencriptar_SVC.cs" />
     <Compile Include="Contracts\cls_encriptar_SVC.cs" />
+    <Compile Include="Contracts\cls_Fibonacci_SVC.cs" />
     <Compile Include="Interfaces\Idesencriptar.cs" />
     <Compile Include="Interfaces\Iencriptar.cs" />
+    <Compile Include="Interfaces\Ifibonacci.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
