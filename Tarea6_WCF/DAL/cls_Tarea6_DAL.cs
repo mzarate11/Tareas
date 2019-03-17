@@ -149,12 +149,12 @@ namespace DAL
         {
             get
             {
-                return sResultadof;
+                return _sResultadof;
             }
 
             set
             {
-                sResultadof = value;
+                _sResultadof = value;
             }
         }
         #endregion

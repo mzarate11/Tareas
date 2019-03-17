@@ -20,9 +20,9 @@ namespace SVC.Contracts
 
             Obj_DAL.iLimite = iLimite;
             OBJ_BLL.Llenar_Fibonacci(ref Obj_DAL);
-
-            OBJ_BLL.Mostrar_Fibonacci(ref Obj_DAL);
             Obj_DAL.sResultadof = sResultadof;
+            OBJ_BLL.Mostrar_Fibonacci(ref Obj_DAL);
+            
             sResultado = sResultadof;
 
             return sResultado;
