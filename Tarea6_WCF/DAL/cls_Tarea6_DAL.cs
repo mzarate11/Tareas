@@ -60,7 +60,7 @@ namespace DAL
         #region Fibonacci
 
         #region Variables Privadas
-        private int _iLimite, _ifactor1, _iFactor2, _iAux, _iFor;
+        private int _iLimite, _ifactor1, _iFactor2, _iAux;
         private int[] _aFibo;
         private string _sResultadof;
         
@@ -118,20 +118,6 @@ namespace DAL
                 _iAux = value;
             }
         }
-
-        public int iFor
-        {
-            get
-            {
-                return _iFor;
-            }
-
-            set
-            {
-                _iFor = value;
-            }
-        }
-
         public int[] aFibo
         {
             get
