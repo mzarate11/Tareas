@@ -12,6 +12,6 @@ namespace SVC.Interfaces
     public interface Ifibonacci
     {
         [OperationContract]
-        string Fibo(int iLimite, string sResultadof, int ifactor1, int ifactor2, int iAux, int[] aFibo);
+        string Fibo(int iLimite, string sResultadof);
     }
 }

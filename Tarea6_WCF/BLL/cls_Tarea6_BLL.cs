@@ -43,6 +43,7 @@ namespace BLL
                 Obj_DAL.iAux = Obj_DAL.ifactor1;
                 Obj_DAL.ifactor1 = Obj_DAL.iFactor2;
                 Obj_DAL.iFactor2 = Obj_DAL.iAux + Obj_DAL.ifactor1;
+                Obj_DAL.aFibo[i] = Obj_DAL.ifactor1;
             }
         }
         public void Mostrar_Fibonacci(ref cls_Tarea6_DAL Obj_DAL)
