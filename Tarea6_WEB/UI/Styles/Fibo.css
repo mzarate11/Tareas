@@ -1,0 +1,30 @@
+﻿h1 {
+    text-align:center;
+    font-size:xx-large;
+    color:white;
+}
+#Parrafo1 {
+text-align:center;
+    font-size:x-large;
+    color:white;
+}
+#Parrafo2 {
+    text-align:center;
+}
+#Parrafo3 {
+    text-align:center;
+}
+#Parrafo4 {
+    text-align:center;
+}
+.inputs {
+        border-radius: 35px 35px 35px 35px;
+-moz-border-radius: 35px 35px 35px 35px;
+-webkit-border-radius: 35px 35px 35px 35px;
+border: 0px none #000000;
+    background-color:#080808;
+    color:white;
+    outline:none;
+    text-anchor:middle;
+    margin-left:0;
+}

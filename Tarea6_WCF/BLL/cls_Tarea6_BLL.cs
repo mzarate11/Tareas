@@ -36,14 +36,18 @@ namespace BLL
             Obj_DAL.iFactor2 = 1;
             for (int i = 0; i < Obj_DAL.iLimite; i++)
             {
-                if(Obj_DAL.iLimite > 16)
+
+                if (Obj_DAL.iLimite > 16)
                 {
                     break;
                 }
-                Obj_DAL.iAux = Obj_DAL.ifactor1;
-                Obj_DAL.ifactor1 = Obj_DAL.iFactor2;
-                Obj_DAL.iFactor2 = Obj_DAL.iAux + Obj_DAL.ifactor1;
-                Obj_DAL.aFibo[i] = Obj_DAL.ifactor1;
+                else
+                {
+                    Obj_DAL.iAux = Obj_DAL.ifactor1;
+                    Obj_DAL.ifactor1 = Obj_DAL.iFactor2;
+                    Obj_DAL.iFactor2 = Obj_DAL.iAux + Obj_DAL.ifactor1;
+                    Obj_DAL.aFibo[i] = Obj_DAL.ifactor1;
+                }
             }
         }
         public void Mostrar_Fibonacci(ref cls_Tarea6_DAL Obj_DAL)
@@ -52,10 +56,17 @@ namespace BLL
             {
                 if (Obj_DAL.aFibo.Length > 16)
                 {
-                    Obj_DAL.sResultadof = "el valor digitado superaría los tres digitos en algún momento de la serie";
+                    Obj_DAL.sResultadof = "el valor colocado superaría los tres dígitos en algún momento de la serie, o el límete colocado es de '0' ";
                     break;
                 }
-                Obj_DAL.sResultadof = Obj_DAL.sResultadof + Obj_DAL.aFibo[i] + "<br />";
+                else
+                {
+                    Obj_DAL.sResultadof = Obj_DAL.sResultadof + Obj_DAL.aFibo[i] + " , ";
+                }
+            }
+            if (Obj_DAL.sResultadof == null)
+            {
+                Obj_DAL.sResultadof = "El límite no puede ser 0";
             }
         }
         
