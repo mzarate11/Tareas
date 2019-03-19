@@ -7,7 +7,7 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Menu" runat="server">
-<form id="form1" name="Encriptar" runat="server">
+    <form id="form1" name="Encriptar" runat="server">
 
     <h1>Encriptado</h1>
 
@@ -25,7 +25,7 @@
             </p>
             <br />
             <p id="Parrafo4">
-                <input type="text" class="boton" id="txt_R" name="Texto_R" runat="server" />
+                <input type="text" class="boton" id="txt_R" name="Texto_R" runat="server" readonly="true" />
             </p>
         </div>
 </form>

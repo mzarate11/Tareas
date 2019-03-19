@@ -26,7 +26,7 @@
         </p>
         <br />
         <p id="Parrafo4">
-            <input type="text" class="inputs" id="txt_R" name="texto_R" runat="server" />
+            <input type="text" class="inputs" id="txt_R" name="texto_R" runat="server" readonly="true" />
         </p>
     </div>
 
